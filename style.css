@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #fafafa;
+}
+
+h1 {
+  position: relative;
+  background-color: #729ea192;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div#preload {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 25%;
+  color: white;
+  background-color: #fafafa;
+  z-index: 1
+}
+
+div#preload h1,
+div#preload h2 {
+  text-align: center;
+}
+
+div#images {
+  height: 10000px;
+  z-index: 0;
+}
+
+.sequencer {
+  min-height: 100%;
+  width: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.content {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.section {
+  position: fixed;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 40%;
+  top: 25%;
+  left: 50%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.footer {
+  position: absolute;
+  top: 10000px;
+  background-color: #729ea1;
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  z-index: 10;
+  color: lightgray;
+}
+
+.description-image {
+  position: fixed;
+  left: 0;
+  top: 10%;
+  z-index: 20;
+}
+
+.description-image.scroll {
+  width: 30px;
+  left: 20%;
+  top: 80%;
+}
+
+.description-image.two {
+  top: 30%;
+}
+
+

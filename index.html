@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="preload">
+    <h1>Loading...</h1>
+  </div>
+
+  <div id="images">
+    <img class="sequencer" src="./images/0.jpg">
+  </div>
+
+  <img data-0="opacity:100%;" data-300="opacity:0%;" class="description-image scroll" src="images/scroll-clue.png" alt="Scroll clue">
+
+  <div class="content">
+    <div data-0="opacity:0%; top:0%" data-500="opacity:100%; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-1000="opacity:100%; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-1900="opacity:0%; top:100%" class="section one">
+      <h1>Recognize this poster? Thought so…</h1>
+      <p>The fact is this iconic poster that was used in the Obama campaign in 2008 was actually created by an artist by
+        the name of Shepard Fairey. Now Fairey, like a lot of us didn’t curate this piece of art out of thin air, no, he
+        needed a bit of inspiration. A visual reference if you will. Unfortunately for Fairey, he used the wrong bit of
+        inspiration without asking for permission. </p>
+        <img class="description-image" src="images/obama-hope.jpeg" alt="Obama Hope Poster">
+    </div>
+  </div>
+
+  <div class="content">
+    <div data-1500="opacity:0%; top:0%" data-2000="opacity:100%; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-2200="opacity:100%; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-2500="opacity:0%; top:100%" class="section two">
+      <h1>What Now?</h1>
+      <p>The photo he referenced was actually owned by an Associated Press photographer. One by the name of Mannie
+        Garcia. From a glance, you can see the poster and the photo bare a striking resemblance to one another. Almost
+        identical. So, it was obvious, The Associated press and Shepard Fairey found each other in court over usage rights of the well-recognized image of President Obama. </p>
+        <img class="description-image two" src="images/poster-photo.png" alt="Poster vs. Photograph">
+    </div>
+  </div>
+
+  <div class="content">
+    <div data-2800="opacity:0; top:0%" data-3300="opacity:100; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-4000="opacity:100; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-4500="opacity:0; top:100%" class="section three">
+      <h1>…But Who Cares?</h1>
+      <p>Well, content creators of all types should care. The fact of the matter is Fairey could have avoided this
+        situation altogether had he simply asked for permission. The U.S. Copyright Code gives the creator of a
+        photograph (or any kind of creative work, including movies, books, articles and songs) – the legal right to
+        limit how other people can use the photo. </p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div data-5300="opacity:0; top:0%" data-5600="opacity:100; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-6800="opacity:100; top:30%; background-color:rgba(114, 158, 161, 0.85);" data-7000="opacity:0; top:100%" class="section four">
+      <h1>In My Opinion</h1>
+      <p>Personally, I feel that Fairey was right in some sense when he stated that his poster transforms the image in
+        Garcia’s picture into a brand-new work of art, because it did. However, he profited from the image, and went
+        against the laws of Copyright by using Garcia’s image without official permission.
+        A photograph, like any piece of creative work, becomes protected by copyright as soon as it is “fixed.” That
+        means, as soon as the image is recorded in the photographer’s camera. When a photo is copyrighted, that means
+        that the owner has the right to decide how other people use it. The laws speak for themselves and they’re there
+        for good reason. It is part of our duty as designers and developers to be aware of them and abide.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Reference provided by The Student Press Law Center 
+      <a href="https://splc.org/2014/08/learning-from-the-headlines-shepard-fairey-the-associated-press-and-fair-use-doctrine/"> @splc.org</a>
+      Thanks for Reading
+    </p>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="jquery-sequencer.min.js"></script>
+  <script>
+    $("div#images").sequencer({
+      count: 206,
+      path: "./images",
+      ext: "jpg"
+    }, function () {
+      $("div#preload").hide();
+    });
+  </script>
+  <script type="text/javascript" src="skrollr.min.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+
+</body>
+
+</html>
